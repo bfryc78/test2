@@ -1,0 +1,32 @@
+import numpy as np
+
+
+A1=[[1, 2], [3, 5]]
+
+print(A1)
+sum=0
+for a in A1:
+  for b in a:
+    sum+=b
+#print(sum)
+
+#B1= 3.5*A1[0]
+#print(B1)
+
+A = np.asarray([[1, 2], [3, 4],[67, 2]])
+print(A)
+
+B=3.5*A
+print(B)
+sum= np.sum(A)
+print(sum)
+print(A.shape)
+sum2=np.sum(A, axis=1)
+print("Sum in rows:", sum2)
+sum3=np.sum(A, axis=0)
+print("Sum in columns: ", sum3)
+print("The column nr", 0, A[:,0])
+print("The column nr", 1, A[:,1])
+print("The row nr", 1, A[1,:])
+
+def task1(arr):
